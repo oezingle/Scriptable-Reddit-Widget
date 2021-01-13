@@ -12,6 +12,13 @@
     .header {
         text-align: center;
     }
+    #update {
+        color: red;
+        font-size: 200%;
+        font-weight: 800;
+        text-align: center;
+        padding-bottom: 3%;
+    }
     ul {
         text-align: left;
     }
@@ -31,6 +38,23 @@
 </head>
 
 <body>
+
+    <div id=update>
+        <h2></h2>
+    </div>
+
+    <script>
+        console.log("test")
+        if (VERSION_STRING != "1.5.0") {
+            document.getElementById('update').addEventListener('click', function() {
+                location.href = 'https://drive.google.com/file/d/1hUDKO7MdopzFigA0oufTOti86m_qhWNe/view?usp=sharing'
+            }, false);
+
+            var theDiv = document.getElementById("update");
+            var content = document.createTextNode("Your script is outdated. Delete the old one, and click here to get the new version");
+            theDiv.appendChild(content);
+        }
+    </script>
     <div class=text>
         <h2 class=header>What's hot on Reddit Scriptable widget by oezingle</h2>
 

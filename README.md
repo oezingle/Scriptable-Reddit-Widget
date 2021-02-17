@@ -7,4 +7,4 @@ An improved Reddit Widget for iOS, using the Scriptable automation app.
 3. Click "Open in 'Scriptable'"
 4. Click "Add to my scripts"
 5. Click the play arrow at the bottom right. 
-6. Configure using the provided instructions
+6. Configure using the built-in tool
